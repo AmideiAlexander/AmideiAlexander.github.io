@@ -1,81 +1,69 @@
 *{
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     list-style: none;
-    background: #000;
-    font-family: monospace;
+    text-decoration: none;
 }
+
+body{
+    font-family: monospace;
+    background: #000;
+}
+
+div h2{
+    color: #e1ff38;
+    text-shadow: 0 0 9px #e1ff38;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px;
+}
+
+div p{
+    color: #fff;
+}
+
+ul li a{
+    color: #e1ff38;
+    text-shadow: 0 0 7px #e1ff38;
+}
+
+.card{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 1200px;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+.card_content{
+    margin: 0 auto;
+}
+
+.card_picture{
+    margin: 0 auto;
+}
+
+.card_img{
+    width: 100%;
+}
+
+.img{
+    width: 100%;
+}
+
+/* Animacion del span */
 
 span{
-    display: block;
-    font-family: monospace;
-    font-size: 24px;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 22ch;
     color: #fff;
-    text-shadow: 0 0 7px #fff;
-
-    animation: typing 2s steps(22), blink .5s infinite step-end alternate;
-
-    overflow: hidden;
-}
-
-@keyframes typing {
-    from{
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-
-.header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.ctn{
-    width: 40%;
-}
-
-.links li a{
-    font-size: 15px;
-    color: #7DEDFF;
-    text-shadow: 0 0 7px #7DEDFF;
-}
-
-
-.ctn-img{
-    width: 40%;
-    height: 250px;
-    background-image: url(https://imagenes.elpais.com/resizer/RDOedOnb4s9vmUpl-t-UrACgv8g=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/645E6ORIEKY5TQOOL7DJLYYSXQ.jpg);
-    background-repeat: no-repeat;
-    background-size: auto  100%;
-}
-
-.ctn-info{
-    width: 40%;
-}
-
-.ctn-info h2{
-    color: #7DEDFF;
-    text-shadow: 0 0 7px #7DEDFF;
-}
-
-.ctn-info p{
-    color: #fff;
-}
-
-.link li a{
-    font-size: 15px;
-    color: #7DEDFF;
-    text-shadow: 0 0 7px #7DEDFF;
+    text-shadow: 0 0 10px #fff;
+    font-size: 25px;
+   
 }
